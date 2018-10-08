@@ -66,22 +66,7 @@ class Owner
   end 
   
   def list_pets
-<<<<<<< HEAD
     "I have #{@pets[:fishes].count.to_s} fish, " + @pets[:dogs].count.to_s + " dog(s), and " + @pets[:cats].count.to_s + " cat(s)."
-=======
-    @pets.each do |pets, array| 
-      if pets == :fishes
-        @fish = array.count.to_s 
-      end
-      if pets == :dogs
-        @dog = array.count.to_s 
-      end
-      if pets == :cats
-        @cat = array.count.to_s 
-      end
-    end
-    "I have #{@fish} fish, " + @dog + " dog(s), and " + @cat + " cat(s)."
->>>>>>> 1298718c0782321d8116117cb2225d97ef0aa1d3
   end 
   
 end
