@@ -45,18 +45,6 @@ class Owner
   
   def buy_dog(name)
     @pets[:dogs] << Dog.new(name)
-
-    @pets[:fishes] = [Fish.new(name)]
-  end 
-  
-  def buy_cat(name)
-    @pets[:cats] = [Cat.new(name)]
-  end 
-  
-  def buy_dog(name)
-    @pets[:dogs] = [Dog.new(name)]
->>>>>>> 1298718c0782321d8116117cb2225d97ef0aa1d3
-  end 
   
   def walk_dogs
     @pets[:dogs].each {|dog| dog.mood = "happy"}
